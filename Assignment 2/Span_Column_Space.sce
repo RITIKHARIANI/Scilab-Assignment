@@ -1,5 +1,5 @@
 //Span of Column Space
-//input of 3*3 matrix
+//input of 3*3 matrix A
 disp('Please enter the matrix A');
 
 a11=input("Enter a11: ");
@@ -14,6 +14,8 @@ a33=input("Enter a33: ");
 
 A=[a11,a12,a13;a21,a22,a23;a31,a32,a33];
 a=A;
+
+//Performing Row transformations by Gaussian elimination
 
 a(2,:)=a(2,:)-(a(2,1)/a(1,1))*a(1,:)
 a(3,:)=a(3,:)-(a(3,1)/a(1,1))*a(1,:)
